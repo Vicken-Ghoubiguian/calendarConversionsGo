@@ -17,7 +17,7 @@ const (
 )
 
 //
-type iso_date struct {
+type ISO_date struct {
   
   //
   iso_year int
@@ -26,7 +26,7 @@ type iso_date struct {
 }
 
 //
-func (current_iso_date *iso_date) InitializeWeather(dt time) {
+func (current_iso_date *ISO_date) InitializeWeather(dt time) {
 
 	//
     current_iso_date.iso_year = 0
