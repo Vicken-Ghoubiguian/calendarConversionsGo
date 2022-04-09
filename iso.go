@@ -4,7 +4,7 @@ package calendarConversionsGo
 type iso_date struct {
   
   //
-  isoYear int64
-  isoWeekNumber int64
-  isoWeekDay int64
+  iso_year int64
+  iso_week_number int64
+  iso_week_day int64
 }
