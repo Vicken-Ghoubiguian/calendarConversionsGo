@@ -40,7 +40,7 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_IS
 }
 
 //
-func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_ISO_week_day() int {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_ISO_week_day() time.Weekday {
 	
 	return current_iso_week_based_calendar_date.iso_week_day
 }
@@ -48,5 +48,5 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_IS
 //
 func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) ToString() string {
 
-	return fmt.Sprintf("%d-W%d-%d", current_iso_week_based_calendar_date.iso_year, int(current_iso_week_based_calendar_date.iso_week_number), current_iso_week_based_calendar_date.iso_week_day)
+	return fmt.Sprintf("%d-W%d-%d", current_iso_week_based_calendar_date.iso_year, current_iso_week_based_calendar_date.iso_week_number, int(current_iso_week_based_calendar_date.iso_week_day))
 }
