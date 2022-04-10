@@ -7,7 +7,7 @@ import (
 )
 
 //
-type ISO_date struct {
+type ISO_week_based_calendar_date struct {
   
   //
   iso_year int
@@ -16,43 +16,37 @@ type ISO_date struct {
 }
 
 //
-func (current_iso_date *ISO_date) InitializeWeather(dt time.Time) {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) InitializeWeather(dt time.Time) {
 	
     //
     iso_date_s_year, iso_date_s_week := dt.ISOWeek()
 
     //
-    current_iso_date.iso_year = iso_date_s_year
-    current_iso_date.iso_week_number = iso_date_s_week
-    current_iso_date.iso_week_day = dt.Weekday()
+    current_iso_week_based_calendar_date.iso_year = iso_date_s_year
+    current_iso_week_based_calendar_date.iso_week_number = iso_date_s_week
+    current_iso_week_based_calendar_date.iso_week_day = dt.Weekday()
 }
 
 //
-func (current_iso_date *ISO_date) Get_ISO_year() int {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_ISO_year() int {
 	
-	return current_iso_date.iso_year
+	return current_iso_week_based_calendar_date.iso_year
 }
 
 //
-func (current_iso_date *ISO_date) Get_ISO_week_number() int {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_ISO_week_number() int {
 	
-	return current_iso_date.iso_week_number
+	return current_iso_week_based_calendar_date.iso_week_number
 }
 
 //
-func (current_iso_date *ISO_date) Get_ISO_week_day() int {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_ISO_week_day() int {
 	
-	return current_iso_date.iso_week_day
+	return current_iso_week_based_calendar_date.iso_week_day
 }
 
 //
-func (current_iso_date *ISO_date) ToString() string {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) ToString() string {
 
-	return fmt.Sprintf("%d-W%d-%d", current_iso_date.iso_year, int(current_iso_date.iso_week_number), current_iso_date.iso_week_day)
-}
-
-//
-func (current_iso_date *ISO_date) Get_ISO_week_day() time.Weekday {
-	
-	return current_iso_date.iso_week_day
+	return fmt.Sprintf("%d-W%d-%d", current_iso_week_based_calendar_date.iso_year, int(current_iso_week_based_calendar_date.iso_week_number), current_iso_week_based_calendar_date.iso_week_day)
 }
