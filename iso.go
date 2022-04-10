@@ -42,7 +42,7 @@ func (current_iso_date *ISO_date) Get_ISO_week_number() int {
 //
 func (current_iso_date *ISO_date) ToString() string {
 
-	return fmt.Sprintf("%d-W%d-%d", current_iso_date.iso_year, int(current_iso_date.iso_week_number), current_iso_date.iso_week_number)
+	return fmt.Sprintf("%d-W%d-%d", current_iso_date.iso_year, int(current_iso_date.iso_week_number), current_iso_date.iso_week_day)
 }
 
 //
