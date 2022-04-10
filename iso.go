@@ -16,7 +16,7 @@ type ISO_week_based_calendar_date struct {
 }
 
 //
-  func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) InitializeWeather(dt time.Time) {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Initialize_ISO_week_based_calendar_date(dt time.Time) {
       
     //
     iso_date_s_year, iso_date_s_week := dt.ISOWeek()
