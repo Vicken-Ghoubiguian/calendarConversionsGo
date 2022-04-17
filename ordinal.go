@@ -1,8 +1,6 @@
 package calendarConversionsGo
 
-//
-
-//"time"
+import "fmt"
 
 //
 type Ordinal_date struct {
@@ -15,6 +13,6 @@ type Ordinal_date struct {
 //
 func (current_ordinal_date *Ordinal_date) ToString() string {
 
-	//fmt.print("Hello, World !")
+	fmt.Print("Hello, World !")
 	return ""
 }
