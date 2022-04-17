@@ -1,6 +1,9 @@
 package calendarConversionsGo
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 //
 type Month int
@@ -27,6 +30,10 @@ var week_day_names = [][]string{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, 
 
 //
 type Positivist_date struct {
+}
+
+//
+func (current_positivist_date *Positivist_date) Initialize_positivist_date(dt time.Time) {
 }
 
 func main() {
