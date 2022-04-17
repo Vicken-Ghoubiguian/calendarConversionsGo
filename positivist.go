@@ -23,7 +23,7 @@ const (
 )
 
 //
-var week_day_names = [][]string{{}, {}}
+var week_day_names = [][]string{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}
 
 func main() {
 
