@@ -17,6 +17,9 @@ type Ordinal_date struct {
 //
 func (current_ordinal_date *Ordinal_date) Initialize_ISO_week_based_calendar_date(dt time.Time) {
 
+	//
+	current_ordinal_date.year = dt.Year()
+	current_ordinal_date.day_of_the_year = dt.YearDay()
 }
 
 //
