@@ -22,6 +22,9 @@ const (
 	Bichat
 )
 
+//
+var week_day_names = []string{}
+
 func main() {
 
 	fmt.Println("hello world")
