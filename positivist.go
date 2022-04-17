@@ -25,6 +25,10 @@ const (
 //
 var week_day_names = [][]string{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}
 
+//
+type Positivist_date struct {
+}
+
 func main() {
 
 	fmt.Println("hello world")
