@@ -37,6 +37,5 @@ func (current_ordinal_date *Ordinal_date) Get_day_of_the_year() int {
 //
 func (current_ordinal_date *Ordinal_date) ToString() string {
 
-	fmt.Print("Hello, World !")
-	return ""
+	return fmt.Sprintf("%d-%d", current_ordinal_date.year, current_ordinal_date.day_of_the_year)
 }
