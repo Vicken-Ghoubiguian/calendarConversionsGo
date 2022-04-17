@@ -23,6 +23,18 @@ func (current_ordinal_date *Ordinal_date) Initialize_ISO_week_based_calendar_dat
 }
 
 //
+func (current_ordinal_date *Ordinal_date) Get_year() int {
+
+	return current_ordinal_date.year
+}
+
+//
+func (current_ordinal_date *Ordinal_date) Get_day_of_the_year() int {
+
+	return current_ordinal_date.day_of_the_year
+}
+
+//
 func (current_ordinal_date *Ordinal_date) ToString() string {
 
 	fmt.Print("Hello, World !")
