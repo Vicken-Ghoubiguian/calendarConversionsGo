@@ -19,8 +19,8 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="uses"></a>
 ## Uses
 
-<a name="conclusion"></a>
-## Conclusion
-
 <a name="useful_links"></a>
 ## Useful links
+
+<a name="conclusion"></a>
+## Conclusion
