@@ -5,8 +5,27 @@ import (
 	"time"
 )
 
+type Month int
+
+ //
+ const (
+ 	Moses Month = iota
+ 	Homer
+ 	Aristotle
+ 	Archimedes
+ 	Caesar
+ 	Saint_Paul
+ 	Charlemagne
+ 	Dante
+ 	Gutenberg
+ 	Shakespeare
+ 	Descartes
+ 	Frederic
+ 	Bichat
+ )
+
 //
-var days_from_months = map[string][]string{
+var days_from_months = map[Month][]string{
 	"1": {
 		"a",
 		"b",
