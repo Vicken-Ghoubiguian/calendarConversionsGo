@@ -26,67 +26,67 @@ type Month int
 
 //
 var days_from_months = map[Month][]string{
-	"1": {
+	Moses: {
 		"a",
 		"b",
 		"c",
 	},
-	"2": {
+	Homer: {
 		"a",
 		"b",
 		"c",
 	},
-	"3": {
+	Aristotle: {
 		"a",
 		"b",
 		"c",
 	},
-	"1": {
+	Archimedes: {
 		"a",
 		"b",
 		"c",
 	},
-	"2": {
+	Caesar: {
 		"a",
 		"b",
 		"c",
 	},
-	"3": {
+	Saint_Paul: {
 		"a",
 		"b",
 		"c",
 	},
-	"1": {
+	Charlemagne: {
 		"a",
 		"b",
 		"c",
 	},
-	"2": {
+	Dante: {
 		"a",
 		"b",
 		"c",
 	},
-	"3": {
+	Gutenberg: {
 		"a",
 		"b",
 		"c",
 	},
-	"1": {
+	Shakespeare: {
 		"a",
 		"b",
 		"c",
 	},
-	"2": {
+	Descartes: {
 		"a",
 		"b",
 		"c",
 	},
-	"3": {
+	Frederic: {
 		"a",
 		"b",
 		"c",
 	},
-	"1": {
+	Bichat: {
 		"a",
 		"b",
 		"c",
