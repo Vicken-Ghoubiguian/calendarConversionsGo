@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-type Month int
+//type Month int
 
  //
  const (
@@ -27,9 +27,34 @@ type Month int
 //
 var days_from_months = map[Month][]string{
 	Moses: {
-		"a",
-		"b",
-		"c",
+		"Prometheus",
+		"Hercules",
+		"Orpheus",
+		"Ulysses",
+		"Lycurgus",
+		"Romulus",
+		"Numa",
+		"Belus",
+		"Sesostris",
+		"Menu",
+		"Cyrus",
+		"Zoroaster",
+		"The Druids",
+		"Buddha",
+		"Fo-Hi",
+		"Lao-Tzu",
+		"Meng-Tzu",
+		"The Priests of Tibet",
+		"The Priests of Japan",
+		"Manco Capac",
+		"Confucius",
+		"Abraham",
+		"Joseph",
+		"Samuel",
+		"Solomon",
+		"Isaac",
+		"St. John the Baptist",
+		"Muhammad",
 	},
 	Homer: {
 		"a",
