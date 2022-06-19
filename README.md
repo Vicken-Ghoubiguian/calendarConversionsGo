@@ -22,5 +22,10 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="useful_links"></a>
 ## Useful links
 
+
+### Positivist calendar
+
+* [https://citizendium.org/wiki/Positivist_calendar](https://citizendium.org/wiki/Positivist_calendar),
+
 <a name="conclusion"></a>
 ## Conclusion
