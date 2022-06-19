@@ -5,8 +5,6 @@ import (
 	"time"
 )
 
-//type Month int
-
  //
  const (
  	Moses Month = iota
