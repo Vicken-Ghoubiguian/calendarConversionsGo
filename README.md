@@ -22,6 +22,8 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="useful_links"></a>
 ## Useful links
 
+* [Get year, month, day from time - yourbasic.org/golang](https://yourbasic.org/golang/day-month-year-from-time/),
+
 <a name="positivist_calendar"></a>
 ### Positivist calendar
 
