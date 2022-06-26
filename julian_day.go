@@ -22,5 +22,7 @@ func (current_julian_day *JulianDay) Get_count_of_days_since_julian_period(dt ti
 }
 
 //
-func (current_julian_day *JulianDay) Format() {
+func (current_julian_day *JulianDay) Format() string {
+
+	return ""
 }
