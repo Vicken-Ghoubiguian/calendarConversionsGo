@@ -30,5 +30,7 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="julian_calendar_and_julian_day"></a>
 ### Julian calendar and Julian day
 
+* [Julian day : Julian day number calculation - Wikipedia](https://en.wikipedia.org/wiki/Julian_day#Julian_day_number_calculation),
+
 <a name="conclusion"></a>
 ## Conclusion
