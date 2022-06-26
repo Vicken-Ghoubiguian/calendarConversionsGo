@@ -7,6 +7,8 @@ import (
 
 //
 type JulianDay struct {
+
+	countOfDaysSinceJulianPeriod int64
 }
 
 //
