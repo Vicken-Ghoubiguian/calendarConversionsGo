@@ -1,10 +1,10 @@
 package calendarConversionsGo
 
-type Month int
+type FrenchRepublicanMonth int
 
  //
  const (
- 	Vendémiaire Month = iota
+ 	Vendémiaire FrenchRepublicanMonth = iota
  	Brumaire
  	Frimaire
  	Nivôse
