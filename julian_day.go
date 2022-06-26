@@ -13,6 +13,10 @@ type JulianDay struct {
 
 //
 func (current_julian_day *JulianDay) Initialize_julian_day(dt time.Time) {
+
+	/*year := dt.Year()
+	month := dt.Month()
+	day := dt.Day()*/
 }
 
 //
