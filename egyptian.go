@@ -8,3 +8,21 @@ type Season int
 	Perit
 	Shemou
  )
+
+ type EgyptianMonth int
+
+  //
+  const (
+	Thout EgyptianMonth = iota
+	Phaophi
+	Athyr
+	Khoiak
+	Tybi
+	Mechir
+	Phaminoth
+	Pharmouti
+	Pachon
+	Payni
+	Epiphi
+	Mesori
+ )
