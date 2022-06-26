@@ -5,9 +5,11 @@ import (
 	"time"
 )
 
+type PositivistMonth int
+
  //
  const (
- 	Moses Month = iota
+ 	Moses PositivistMonth = iota
  	Homer
  	Aristotle
  	Archimedes
@@ -23,7 +25,7 @@ import (
  )
 
 //
-var days_from_months = map[Month][]string{
+var days_from_months = map[PositivistMonth][]string{
 	Moses: {
 		"Prometheus",
 		"Hercules",
