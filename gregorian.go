@@ -17,3 +17,9 @@ type GregorianMonth int
 	November
 	December
  )
+
+ //
+func Format() string {
+
+	return ""
+}
