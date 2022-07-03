@@ -1,5 +1,10 @@
 package calendarConversionsGo
 
+//
+import (
+    "time"
+)
+
 type GregorianMonth int
 
  //
@@ -20,6 +25,11 @@ type GregorianMonth int
 
  //
 type Gregorian struct {
+
+}
+
+//
+func (current_gregorian *Gregorian) Initialize_gregorian(dt time.Time) {
 
 }
 
