@@ -24,10 +24,16 @@ Go package to convert date and time in a particular calendar and to convert them
 
 * [Get year, month, day from time - yourbasic.org/golang](https://yourbasic.org/golang/day-month-year-from-time/),
 
+<a name=""></a>
+### 
+
 <a name="positivist_calendar"></a>
 ### Positivist calendar
 
 * [Positivist calendar - Citizendium](https://citizendium.org/wiki/Positivist_calendar),
+
+<a name="gregorian_calendar"></a>
+### Gregorian calendar
 
 <a name="julian_calendar_and_julian_day"></a>
 ### Julian calendar and Julian day
