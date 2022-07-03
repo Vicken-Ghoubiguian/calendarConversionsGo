@@ -23,7 +23,7 @@ func (current_gregorian *Gregorian) Julian_to_gregorian(julianDate Julian) {
 
 }
 
- //
+//
 func (current_gregorian *Gregorian) Format() string {
 
 	return ""
