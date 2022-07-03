@@ -19,7 +19,12 @@ type GregorianMonth int
  )
 
  //
-func Format() string {
+type Gregorian struct {
+
+}
+
+ //
+func (current_gregorian *Gregorian) Format() string {
 
 	return ""
 }
