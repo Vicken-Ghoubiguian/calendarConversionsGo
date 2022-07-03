@@ -28,6 +28,12 @@ func (current_julian_day *JulianDay) Determine_gregorian_date() {
 }
 
 //
+func (current_julian_day *JulianDay) Get_count_of_days_since_julian_period(dt time.Time) int64 {
+
+	return current_julian_day.countOfDaysSinceJulianPeriod
+}
+
+//
 func (current_julian_day *JulianDay) Format() string {
 
 	return ""
