@@ -24,8 +24,8 @@ Go package to convert date and time in a particular calendar and to convert them
 
 * [Get year, month, day from time - yourbasic.org/golang](https://yourbasic.org/golang/day-month-year-from-time/),
 
-<a name=""></a>
-### 
+<a name="french_republican_calendar"></a>
+### French republican calendar
 
 <a name="positivist_calendar"></a>
 ### Positivist calendar
