@@ -32,7 +32,7 @@ type Julian struct {
 }
 
 //
-func (current_julian *Gregorian) Initialize_julian(dt time.Time) {
+func (current_julian *Julian) Initialize_julian(dt time.Time) {
 
 }
 
