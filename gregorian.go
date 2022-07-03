@@ -5,11 +5,11 @@ import (
     "time"
 )
 
-type GregorianMonth int
+type gregorianMonth int
 
  //
  const (
-	January GregorianMonth = iota
+	January gregorianMonth = iota
 	February
 	March
 	April
@@ -26,6 +26,9 @@ type GregorianMonth int
  //
 type Gregorian struct {
 
+	year int64
+	month gregorianMonth
+	day int64
 }
 
 //
