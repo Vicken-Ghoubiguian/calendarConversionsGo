@@ -25,6 +25,11 @@ func (current_gregorian *Gregorian) Julian_to_gregorian(julianDate Julian) {
 }
 
 //
+func (current_gregorian *Gregorian) JulianDay_to_gregorian(julianDayDate JulianDay) {
+
+}
+
+//
 func (current_gregorian *Gregorian) Get_year() int64 {
 
 	return current_gregorian.year
