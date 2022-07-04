@@ -10,6 +10,7 @@ type Gregorian struct {
 
 	year int64
 	month gregorianAndJulianMonth
+	monthNumber int64
 	day int64
 }
 
