@@ -38,7 +38,7 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="julian_calendar_and_julian_day"></a>
 ### Julian calendar and Julian day
 
-* [Julian day : Julian day number calculation - Wikipedia](https://en.wikipedia.org/wiki/Julian_day#Julian_day_number_calculation),
+* [Julian day : Julian day number calculation - Wikipedia](https://en.wikipedia.org/wiki/Julian_day),
 * [Today’s Julian Date: 2022 Julian Calendar Converter - Type calendar](https://www.typecalendar.com/julian-date),
 
 <a name="conclusion"></a>
