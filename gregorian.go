@@ -9,7 +9,7 @@ import (
 type Gregorian struct {
 
 	year int64
-	month gregorianAndJulianMonth
+	month time.Month
 	monthNumber int64
 	day int64
 }
@@ -39,7 +39,7 @@ func (current_gregorian *Gregorian) Get_year() int64 {
 }
 
 //
-func (current_gregorian *Gregorian) Get_month() gregorianAndJulianMonth {
+func (current_gregorian *Gregorian) Get_month() time.Month {
 
 	return current_gregorian.month
 }
