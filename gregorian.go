@@ -18,7 +18,7 @@ type Gregorian struct {
 func (current_gregorian *Gregorian) Initialize_gregorian(dt time.Time) {
 
 	current_gregorian.year = int64(dt.Year())
-
+	current_gregorian.month = dt.Month()
 	current_gregorian.day = int64(dt.Day())
 }
 
