@@ -9,7 +9,7 @@ import (
 type Julian struct {
 
 	year int64
-	month gregorianAndJulianMonth
+	month time.Month
 	day int64
 }
 
