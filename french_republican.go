@@ -38,5 +38,9 @@ type frenchRepublicanMonth int
  //
 type FrenchRepublican struct {
 
-	
+	year int64
+	month frenchRepublicanMonth
+	monthDay int64
+	decadi int64
+	weekDay frenchRepublicanWeekDay
 }
