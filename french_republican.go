@@ -34,3 +34,9 @@ type frenchRepublicanMonth int
 	Nonidi
 	Decadi
  )
+
+ //
+type FrenchRepublican struct {
+
+	
+}
