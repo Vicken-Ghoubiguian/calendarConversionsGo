@@ -18,3 +18,19 @@ type frenchRepublicanMonth int
  	Fructidor
  	Sans_culottides
  )
+
+ type frenchRepublicanWeekDay int
+
+ //
+ const (
+	Primidi frenchRepublicanWeekDay = iota
+	Duodi
+	Tridi
+	Quartidi
+	Quintidi
+	Sextidi
+	Septidi
+	Octidi
+	Nonidi
+	Decadi
+ )
