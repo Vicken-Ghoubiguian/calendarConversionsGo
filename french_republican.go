@@ -43,4 +43,5 @@ type FrenchRepublican struct {
 	monthDay int64
 	decadi int64
 	weekDay frenchRepublicanWeekDay
+	dayName string
 }
