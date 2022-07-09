@@ -27,6 +27,9 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="french_republican_calendar"></a>
 ### French republican calendar
 
+* [Calendrier républicain - Wikipedia](https://fr.wikipedia.org/wiki/Calendrier_républicain)
+* [Le « calendrier des Français » Convertisseur révolutionnaire - herodote.net](https://www.herodote.net/calendrier-gregorien-republicain.php)
+
 <a name="positivist_calendar"></a>
 ### Positivist calendar
 
