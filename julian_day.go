@@ -3,7 +3,7 @@ package calendarConversionsGo
 //
 import (
 	"time"
-	//"strconv"
+	"fmt"
 	"math"
 )
 
@@ -60,6 +60,5 @@ func (current_julian_day *JulianDay) Get_count_of_days_since_julian_period(dt ti
 //
 func (current_julian_day *JulianDay) Format() string {
 
-	return ""
-	//return strconv.Itoa(int(current_julian_day.countOfDaysSinceJulianPeriod))
+	return fmt.Sprintf("%f", current_julian_day.countOfDaysSinceJulianPeriod)
 }
