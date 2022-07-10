@@ -4,6 +4,7 @@ package calendarConversionsGo
 import (
 	"time"
 	"strconv"
+	//"math"
 )
 
 //
@@ -17,7 +18,17 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_time(dt time.Tim
 
 	/*Y := int64(dt.Year())
 	M := 0
-	D := int64(dt.Day())*/
+	D := int64(dt.Day())
+
+	A := math.Floor(Y/100)
+	B := math.Floor(A/4)
+	C := math.Floor(2 - A + B)
+	E := math.Floor(365.25 * (Y + 4716))
+	F := math.Floor(30.6001 * (M + 1))
+
+	JD := C + D + E + F - 1524.5
+
+	current_julian_day.countOfDaysSinceJulianPeriod = JD*/
 }
 
 //
