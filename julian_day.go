@@ -13,7 +13,7 @@ type JulianDay struct {
 }
 
 //
-func (current_julian_day *JulianDay) Initialize_julian_day(dt time.Time) {
+func (current_julian_day *JulianDay) Initialize_julian_day_from_time(dt time.Time) {
 
 
 }
