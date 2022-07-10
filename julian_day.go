@@ -53,9 +53,11 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 }
 
 //
-func (current_julian_day *JulianDay) Determine_gregorian_date() {
+func (current_julian_day *JulianDay) Determine_gregorian_date() Gregorian {
 
+	var correspondingGregorianDate Gregorian
 
+	return correspondingGregorianDate
 }
 
 //
