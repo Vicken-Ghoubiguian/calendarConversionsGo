@@ -8,6 +8,7 @@ import (
 //
 type Gregorian struct {
 
+	//
 	year int64
 	month time.Month
 	monthNumber int64

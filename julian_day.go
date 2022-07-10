@@ -10,6 +10,7 @@ import (
 //
 type JulianDay struct {
 
+	//
 	countOfDaysSinceJulianPeriod float64
 }
 
