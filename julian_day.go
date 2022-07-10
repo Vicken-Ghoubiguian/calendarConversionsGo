@@ -52,10 +52,10 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 }
 
 //
-/*func (current_julian_day *JulianDay) Determine_gregorian_date() Gregorian {
+func (current_julian_day *JulianDay) Determine_gregorian_date() {
 
 
-}*/
+}
 
 //
 func (current_julian_day *JulianDay) Get_count_of_days_since_julian_period(dt time.Time) float64 {
