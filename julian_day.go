@@ -15,7 +15,9 @@ type JulianDay struct {
 //
 func (current_julian_day *JulianDay) Initialize_julian_day_from_time(dt time.Time) {
 
-
+	/*Y := int64(dt.Year())
+	M := 0
+	D := int64(dt.Day())*/
 }
 
 //
