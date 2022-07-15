@@ -24,10 +24,10 @@ func (current_gregorian *Gregorian) Initialize_gregorian(dt time.Time) {
 	current_gregorian.day = int64(dt.Day())
 }
 
-/*func(current_gregorian *Gregorian) Initialize_time(year int64, day int64) time.Time {
+func(current_gregorian *Gregorian) Initialize_time(year int64, monthNumber int64, day int64) time.Time {
 
-
-}*/
+	return time.Now()
+}
 
 //
 func (current_gregorian *Gregorian) Get_year() int64 {
