@@ -16,7 +16,13 @@ type Gregorian struct {
 }
 
 //
+func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int64, monthNumber int64, day int64) {
 
+	current_gregorian.year = year
+	current_gregorian.month = time.Month(monthNumber)
+	current_gregorian.monthNumber = monthNumber
+	current_gregorian.day = day
+}
 
 //
 func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time) {
