@@ -24,6 +24,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian(dt time.Time) {
 	current_gregorian.day = int64(dt.Day())
 }
 
+//
 func(current_gregorian *Gregorian) Initialize_time(year int64, monthNumber int64, day int64) time.Time {
 
 	return time.Date(int(year), time.Month(monthNumber), int(day), 0, 0, 0, 0, time.Now().Location())
