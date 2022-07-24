@@ -78,7 +78,6 @@ func (current_julian_day *JulianDay) Determine_gregorian_date() Gregorian {
 	//
 	//correspondingGregorianDate.day = B - D - F
 
-
 	//
 	return correspondingGregorianDate
 }
