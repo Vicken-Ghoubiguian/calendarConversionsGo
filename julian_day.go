@@ -60,7 +60,9 @@ func (current_julian_day *JulianDay) Determine_gregorian_date() Gregorian {
 
 	//
 	/*Q := current_julian_day.countOfDaysSinceJulianPeriod + 0.5
+	new_Q := int64(Q)
 	Z, _ := math.Modf(Q)
+	new_Z := int64(Z)
 	W := (Z - 1867216.25)/36524.25
 	X := W/4
 	A := Z + 1 + W - X
@@ -71,7 +73,11 @@ func (current_julian_day *JulianDay) Determine_gregorian_date() Gregorian {
 	F := 30.6001 * E*/
 
 	//
-	//correspondingGregorianDate.day = B - D - F + (Q - Z)
+	fmt.Print("")
+
+	//
+	//correspondingGregorianDate.day = B - D - F
+
 
 	//
 	return correspondingGregorianDate
