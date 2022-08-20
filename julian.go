@@ -23,6 +23,10 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	jd.Initialize_julian_day_from_time(dt)
 
 	//
+	jd.Add_value_to_count_of_days_since_julian_period(0.5)
+
+	//
+	
 }
 
 //
