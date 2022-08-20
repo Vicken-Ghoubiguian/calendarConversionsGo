@@ -23,7 +23,6 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	jd.Initialize_julian_day_from_time(dt)
 
 	//
-	
 }
 
 //
