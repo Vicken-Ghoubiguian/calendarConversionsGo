@@ -3,6 +3,7 @@ package calendarConversionsGo
 //
 import (
     "time"
+	//"math"
 )
 
 //
@@ -26,7 +27,10 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	jd.Add_value_to_count_of_days_since_julian_period(0.5)
 
 	//
-	
+	//a := math.Floor(jd.Get_count_of_days_since_julian_period())
+
+	//
+	//b := a + 1524
 }
 
 //
