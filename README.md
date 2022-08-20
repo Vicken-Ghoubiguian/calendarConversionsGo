@@ -23,7 +23,7 @@ Go package to convert date and time in a particular calendar and to convert them
 ## Useful links
 
 * [Get year, month, day from time - yourbasic.org/golang](https://yourbasic.org/golang/day-month-year-from-time/),
-* [Astronomical Algorithms - Meeus](https://www.agopax.it/Libri_astronomia/pdf/Astronomical%20Algorithms.pdf)
+* [Astronomical Algorithms - Jean Meeus](https://www.agopax.it/Libri_astronomia/pdf/Astronomical%20Algorithms.pdf)
 
 <a name="french_republican_calendar"></a>
 ### French republican calendar
