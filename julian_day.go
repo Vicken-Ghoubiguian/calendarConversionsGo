@@ -89,6 +89,12 @@ func (current_julian_day *JulianDay) Get_count_of_days_since_julian_period(dt ti
 }
 
 //
+func (current_julian_day *JulianDay) Add_value_to_count_of_days_since_julian_period(adding_value float64) {
+
+	current_julian_day.countOfDaysSinceJulianPeriod += adding_value
+}
+
+//
 func (current_julian_day *JulianDay) Format() string {
 
 	return fmt.Sprintf("%f", current_julian_day.countOfDaysSinceJulianPeriod)
