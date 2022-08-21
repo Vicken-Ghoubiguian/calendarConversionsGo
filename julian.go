@@ -29,7 +29,19 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	b := a + 1524
 	c := math.Floor((b - 122.1) / 365.25)
 	d := math.Floor(365.25 * c)
-	e := math.Floor((b - d) / 30.6001)*/
+	e := math.Floor((b - d) / 30.6001)
+	
+	if e < 14 {
+
+		month := math.Floor(e - 1)
+
+	} else {
+
+		month := math.Floor(e - 13)
+	}
+
+
+	*/
 }
 
 //
