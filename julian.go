@@ -40,11 +40,16 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 		month := math.Floor(e - 13)
 	}
 
-	if {
+	if month > 2 {
 
-		
+		year := math.Floor(c - 4716)
+
+	} else {
+
+		year = math.Floor(c - 4715)
 	}
 
+	day = b - d - math.Floor(30.6001 * e)
 	*/
 }
 
