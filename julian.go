@@ -37,11 +37,11 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	//
 	if e < 14 {
 
-		month = math.Floor(e - 1)
+		month = int(math.Floor(e - 1))
 
 	} else {
 
-		month = math.Floor(e - 13)
+		month = int(math.Floor(e - 13))
 	}
 
 	//
@@ -50,15 +50,15 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	//
 	if month > 2 {
 
-		year = math.Floor(c - 4716)
+		year = int(math.Floor(c - 4716))
 
 	} else {
 
-		year = math.Floor(c - 4715)
+		year = int(math.Floor(c - 4715))
 	}
 
 	//
-	day = b - d - math.Floor(30.6001 * e)*/
+	day := b - d - math.Floor(30.6001 * e)*/
 
 
 }
