@@ -58,9 +58,11 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 	}
 
 	//
-	day := b - d - math.Floor(30.6001 * e)*/
-
-
+	day := b - d - math.Floor(30.6001 * e)
+	
+	//
+	current_julian.day = day
+	current_julian.year = year*/
 }
 
 //
