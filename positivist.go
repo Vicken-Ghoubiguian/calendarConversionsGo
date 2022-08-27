@@ -1,4 +1,4 @@
-package calendarConversionsGo
+package calendar_conversions
 
 import (
 	"fmt"

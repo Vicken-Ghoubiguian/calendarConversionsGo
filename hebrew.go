@@ -1,1 +1,1 @@
-package calendarConversionsGo
+package calendar_conversions
