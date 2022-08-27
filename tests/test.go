@@ -2,6 +2,7 @@ package main
 
 import (
 	"time"
+	"fmt"
 	"github.com/Vicken-Ghoubiguian/calendar_conversions"
 )
 
@@ -14,5 +15,5 @@ func main() {
 	current_julian_day.Initialize_julian_day_from_time(time.Now())
 
 	//
-	current_julian_day.Format()
+	fmt.Println(current_julian_day.Format())
 }
