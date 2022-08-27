@@ -49,5 +49,9 @@ Go package to convert date and time in a particular calendar and to convert them
 * [Julian Day Numbers - Bill Jefferys' Home Page](https://quasar.as.utexas.edu/BillInfo/JulianDatesG.html),
 * [Today’s Julian Date: 2022 Julian Calendar Converter - Type calendar](https://www.typecalendar.com/julian-date)
 
+<a name="about_go"></a>
+
+* [How To Import Local Files In Golang In 4 Easy Steps - linguinecode](https://linguinecode.com/post/how-to-import-local-files-packages-in-golang)
+
 <a name="conclusion"></a>
 ## Conclusion
