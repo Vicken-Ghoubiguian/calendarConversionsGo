@@ -51,7 +51,8 @@ Go package to convert date and time in a particular calendar and to convert them
 
 <a name="about_go"></a>
 
-* [How To Import Local Files In Golang In 4 Easy Steps - linguinecode](https://linguinecode.com/post/how-to-import-local-files-packages-in-golang)
+* [How To Import Local Files In Golang In 4 Easy Steps - linguinecode](https://linguinecode.com/post/how-to-import-local-files-packages-in-golang),
+* [Understanding go.sum and go.mod file in Go (Golang) - Welcome To Golang By Example](https://golangbyexample.com/go-mod-sum-module/)
 
 <a name="conclusion"></a>
 ## Conclusion
