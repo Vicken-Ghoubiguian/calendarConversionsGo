@@ -8,11 +8,11 @@ import (
 func main() {
 
 	//
-	var test calendar_conversions.JulianDay
+	var current_julian_day calendar_conversions.JulianDay
 
 	//
-	test.Initialize_julian_day_from_time(time.Now())
+	current_julian_day.Initialize_julian_day_from_time(time.Now())
 
 	//
-	test.Format()
+	current_julian_day.Format()
 }
