@@ -15,8 +15,11 @@ func main() {
 	current_date_in_iso.Initialize_ISO_week_based_calendar_date(time.Now())
 
 	//
-	fmt.Println(current_date_in_iso.Format(true))
+	fmt.Println("Compact : " + current_date_in_iso.Format(true))
 
 	//
-	fmt.Println(current_date_in_iso.Format(false))
+	fmt.Println("========================================")
+
+	//
+	fmt.Println("Non-compact : " + current_date_in_iso.Format(false))
 }
