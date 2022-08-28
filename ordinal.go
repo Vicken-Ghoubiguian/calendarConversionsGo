@@ -35,7 +35,7 @@ func (current_ordinal_date *Ordinal_date) Get_day_of_the_year() int {
 }
 
 //
-func (current_ordinal_date *Ordinal_date) ToString() string {
+func (current_ordinal_date *Ordinal_date) Format() string {
 
 	return fmt.Sprintf("%d-%d", current_ordinal_date.year, current_ordinal_date.day_of_the_year)
 }

@@ -52,7 +52,7 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_IS
 }
 
 //
-func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) ToString(compact bool) string {
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Format(compact bool) string {
 
     if compact {
         return fmt.Sprintf("%dW%d%d", current_iso_week_based_calendar_date.iso_year, current_iso_week_based_calendar_date.iso_week_number, current_iso_week_based_calendar_date.iso_week_day)
