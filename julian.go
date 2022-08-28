@@ -3,6 +3,7 @@ package calendar_conversions
 //
 import (
     "time"
+	"fmt"
 	"math"
 )
 
@@ -80,5 +81,5 @@ func (current_julian *Julian) Julian_to_Gregorian() {
 //
 func (current_julian *Julian) Format() string {
 
-	return ""
+	return fmt.Sprintf("%d-%d-%d", current_julian.year, int(current_julian.month), current_julian.day)
 }
