@@ -45,6 +45,8 @@ func (current_julian *Julian) Initialize_julian(dt time.Time) {
 		month = int(math.Floor(e - 13))
 	}
 
+	fmt.Println(int(month))
+
 	//
 	year := -1
 
