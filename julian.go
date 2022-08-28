@@ -80,6 +80,12 @@ func (current_julian *Julian) Julian_to_Gregorian() {
 }
 
 //
+/*func (current_julian *Julian) Julian_to_Time() Time.Date {
+
+
+}*/
+
+//
 func (current_julian *Julian) Format() string {
 
 	return fmt.Sprintf("%d-%d-%d", current_julian.year, int(current_julian.month), current_julian.day)
