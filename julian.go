@@ -68,7 +68,7 @@ func (current_julian *Julian) Initialize_julian_from_time_golang(dt time.Time) {
 }
 
 //
-func (current_julian *Julian) Gregorian_to_julian(gregorianDate Gregorian) {
+func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gregorian) {
 
 
 }
