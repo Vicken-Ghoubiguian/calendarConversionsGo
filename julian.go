@@ -71,10 +71,10 @@ func (current_julian *Julian) Initialize_julian_from_time_golang(dt time.Time) {
 func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gregorian) {
 
 	//
-	/*var jd JulianDay
+	var jd JulianDay
 
 	//
-	jd.Initialize_julian_day_from_time(dt)
+	jd.Initialize_julian_day_from_gregorian_date(gregorianDate)
 
 	//
 	jd.Add_value_to_count_of_days_since_julian_period(0.5)
@@ -116,7 +116,7 @@ func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gre
 	//
 	current_julian.day = int64(day)
 	current_julian.month = time.Month(month)
-	current_julian.year = int64(year)*/
+	current_julian.year = int64(year)
 }
 
 //
