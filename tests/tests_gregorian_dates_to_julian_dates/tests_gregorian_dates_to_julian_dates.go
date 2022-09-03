@@ -40,5 +40,8 @@ func main() {
 	fmt.Println("====== Proclamation of the first french Republic ======")
 
 	//
+	fmt.Println("-------------------------------")
+
+	//
 	fmt.Println("=======================================================")
 }
