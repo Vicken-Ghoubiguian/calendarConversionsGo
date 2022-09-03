@@ -21,8 +21,14 @@ func main() {
 	november_7_1917_in_time_golang := time.Date(1917, time.Month(11), 7, 0, 0, 0, 0, time.UTC)
 
 	//
-	november_7_1917_gregorian_to_julian.Gregorian_to_julian(november_7_1917_in_gregorian)
+	november_7_1917_gregorian_to_julian.Initialize_julian_from_Gregorian(november_7_1917_in_gregorian)
 	november_7_1917_from_time_golang_to_julian.Initialize_julian_from_time_golang(november_7_1917_in_time_golang)
+
+	//
+	fmt.Println(november_7_1917_gregorian_to_julian.Format())
+	
+	//
+	fmt.Println("-------------------------------")
 
 	//
 	fmt.Println(november_7_1917_from_time_golang_to_julian.Format())
