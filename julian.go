@@ -16,7 +16,7 @@ type Julian struct {
 }
 
 //
-func (current_julian *Julian) Initialize_julian(dt time.Time) {
+func (current_julian *Julian) Initialize_julian_from_time_golang(dt time.Time) {
 
 	//
 	var jd JulianDay
