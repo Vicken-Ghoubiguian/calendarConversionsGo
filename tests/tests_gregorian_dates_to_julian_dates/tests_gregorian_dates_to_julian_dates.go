@@ -25,13 +25,13 @@ func main() {
 	fmt.Println("===============================")
 
 	//
-	fmt.Println(november_7_1917_gregorian_to_julian.Format())
+	fmt.Println("Gregorian to Julian : " + november_7_1917_gregorian_to_julian.Format())
 	
 	//
 	fmt.Println("-------------------------------")
 
 	//
-	fmt.Println(november_7_1917_from_time_golang_to_julian.Format())
+	fmt.Println("Golang time to Julian : " + november_7_1917_from_time_golang_to_julian.Format())
 
 	//
 	fmt.Println("===============================")
