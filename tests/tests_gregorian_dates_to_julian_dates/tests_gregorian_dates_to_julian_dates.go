@@ -22,7 +22,7 @@ func main() {
 	november_7_1917_from_time_golang_to_julian.Initialize_julian_from_time_golang(november_7_1917_in_time_golang)
 
 	//
-	fmt.Println("===============================")
+	fmt.Println("====== October Revolution ======")
 
 	//
 	fmt.Println("Gregorian to Julian : " + november_7_1917_gregorian_to_julian.Format())
@@ -34,5 +34,5 @@ func main() {
 	fmt.Println("Golang time to Julian : " + november_7_1917_from_time_golang_to_julian.Format())
 
 	//
-	fmt.Println("===============================")
+	fmt.Println("================================")
 }
