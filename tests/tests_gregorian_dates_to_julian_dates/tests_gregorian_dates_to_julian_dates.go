@@ -9,6 +9,9 @@ import (
 func main() {
 
 	//
+	fmt.Println("====== October Revolution ======")
+
+	//
 	var november_7_1917_gregorian_to_julian calendar_conversions.Julian
 	var november_7_1917_from_time_golang_to_julian calendar_conversions.Julian
 	var november_7_1917_in_gregorian calendar_conversions.Gregorian
@@ -20,9 +23,6 @@ func main() {
 	//
 	november_7_1917_gregorian_to_julian.Initialize_julian_from_Gregorian(november_7_1917_in_gregorian)
 	november_7_1917_from_time_golang_to_julian.Initialize_julian_from_time_golang(november_7_1917_in_time_golang)
-
-	//
-	fmt.Println("====== October Revolution ======")
 
 	//
 	fmt.Println("Gregorian to Julian : " + november_7_1917_gregorian_to_julian.Format())
