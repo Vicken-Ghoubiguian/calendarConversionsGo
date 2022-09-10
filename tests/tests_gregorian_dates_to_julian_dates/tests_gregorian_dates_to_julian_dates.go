@@ -53,11 +53,13 @@ func main() {
 	september_22_1792_from_time_golang_to_julian.Initialize_julian_from_time_golang(september_22_1792_in_time_golang)
 
 	//
+	fmt.Println("Gregorian to Julian : " + september_22_1792_gregorian_to_julian.Format())
 
 	//
 	fmt.Println("-------------------------------")
 
 	//
+	fmt.Println("Golang time to Julian : " + september_22_1792_from_time_golang_to_julian.Format())
 
 	//
 	fmt.Println("=======================================================")
