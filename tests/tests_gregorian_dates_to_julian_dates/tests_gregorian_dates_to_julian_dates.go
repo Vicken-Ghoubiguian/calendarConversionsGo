@@ -40,6 +40,19 @@ func main() {
 	fmt.Println("====== Proclamation of the first french Republic ======")
 
 	//
+	var september_22_1792_gregorian_to_julian calendar_conversions.Julian
+	var september_22_1792_from_time_golang_to_julian calendar_conversions.Julian
+	var september_22_1792_in_gregorian calendar_conversions.Gregorian
+
+	//
+	september_22_1792_in_gregorian.Initialize_gregorian_from_elements(1792, 9, 22)
+	september_22_1792_in_time_golang := time.Date(1792, time.Month(9), 22, 0, 0, 0, 0, time.UTC)
+
+	//
+	september_22_1792_gregorian_to_julian.Initialize_julian_from_Gregorian(september_22_1792_in_gregorian)
+	september_22_1792_from_time_golang_to_julian.Initialize_julian_from_time_golang(september_22_1792_in_time_golang)
+
+	//
 	fmt.Println("-------------------------------")
 
 	//
