@@ -56,7 +56,7 @@ func main() {
 	fmt.Println("Gregorian to Julian : " + september_22_1792_gregorian_to_julian.Format())
 
 	//
-	fmt.Println("-------------------------------")
+	fmt.Println("-------------------------------------------------------")
 
 	//
 	fmt.Println("Golang time to Julian : " + september_22_1792_from_time_golang_to_julian.Format())
