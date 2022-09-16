@@ -125,6 +125,13 @@ func (current_julian *Julian) Julian_to_julian_day() JulianDay {
 	//
 	var jd JulianDay
 
+	//
+	if current_julian.month <= 2 {
+
+		current_julian.year = current_julian.year - 1
+		current_julian.month = current_julian.month + 12
+	}
+
 	return jd
 }
 
