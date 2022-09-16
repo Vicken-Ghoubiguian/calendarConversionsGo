@@ -17,7 +17,7 @@ func main() {
 	var november_7_1917_in_gregorian calendar_conversions.Gregorian
 
 	//
-	november_7_1917_in_gregorian.Initialize_gregorian_from_elements(1917, 11, 7)
+	november_7_1917_in_gregorian.Initialize_gregorian_from_elements(1917, 11, 7, 0, 0, 0, 0)
 	november_7_1917_in_time_golang := time.Date(1917, time.Month(11), 7, 0, 0, 0, 0, time.UTC)
 
 	//
@@ -45,7 +45,7 @@ func main() {
 	var september_22_1792_in_gregorian calendar_conversions.Gregorian
 
 	//
-	september_22_1792_in_gregorian.Initialize_gregorian_from_elements(1792, 9, 22)
+	september_22_1792_in_gregorian.Initialize_gregorian_from_elements(1792, 9, 22, 0, 0, 0, 0)
 	september_22_1792_in_time_golang := time.Date(1792, time.Month(9), 22, 0, 0, 0, 0, time.UTC)
 
 	//
