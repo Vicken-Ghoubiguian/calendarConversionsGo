@@ -13,6 +13,10 @@ type Gregorian struct {
 	month time.Month
 	monthNumber int64
 	day int64
+	hour int64
+	minute int64
+	second int64
+	microseconds int64
 }
 
 //
@@ -22,6 +26,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int6
 	current_gregorian.month = time.Month(monthNumber)
 	current_gregorian.monthNumber = monthNumber
 	current_gregorian.day = day
+
 }
 
 //
@@ -31,6 +36,10 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 	current_gregorian.month = dt.Month()
 	current_gregorian.monthNumber = int64(dt.Month())
 	current_gregorian.day = int64(dt.Day())
+	current_gregorian.hour = int64(dt.Hour())
+	current_gregorian.minute = int64(dt.Minute())
+	current_gregorian.second = int64(dt.Second())
+	//current_gregorian.microseconds = int64(dt.Microseconds())
 }
 
 //
