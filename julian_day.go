@@ -55,7 +55,13 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 	F := math.Floor(30.6001 * (M + 1))
 
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = C + D + E + F - 1524.5
+	/*H := dt.Hour() / 24.0
+    MIN := math.Round((dt.Minute() / (24.0 * 60)), 5)
+    SEC := math.Round((dt.Second() / (24.0 * 60 * 60)), 5)
+    MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
+
+	//
+	current_julian_day.countOfDaysSinceJulianPeriod = (C + D + E + F - 1524.5) // + H + MIN + SEC + MILLISEC
 }
 
 //
