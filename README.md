@@ -23,6 +23,12 @@ go get -u github.com/Vicken-Ghoubiguian/calendar_conversions
 <a name="uses"></a>
 ## Uses
 
+<a name="tests"></a>
+## Tests
+
+<a name="documentation"></a>
+## Documentation
+
 <a name="useful_links"></a>
 ## Useful links
 
