@@ -120,6 +120,15 @@ func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gre
 }
 
 //
+func (current_julian *Julian) Julian_to_julian_day() JulianDay {
+
+	//
+	var jd JulianDay
+
+	return jd
+}
+
+//
 func (current_julian *Julian) Julian_to_Gregorian() Gregorian {
 
 	//
