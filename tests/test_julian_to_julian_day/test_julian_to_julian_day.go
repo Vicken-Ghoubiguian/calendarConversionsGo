@@ -17,6 +17,8 @@ func main() {
 	//
 	current_julian_date.Initialize_julian_from_time_golang(time.Now())
 
+	fmt.Println(current_julian_date.Format())
+
 	//
 	current_julian_day.Initialize_julian_day_from_julian_date(current_julian_date)
 
