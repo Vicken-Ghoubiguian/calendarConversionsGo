@@ -135,6 +135,30 @@ func (current_julian *Julian) Julian_to_time_golang() time.Time {
 }
 
 //
+func (current_julian *Julian) Get_year() int64 {
+
+	return current_julian.year
+}
+
+//
+func (current_julian *Julian) Get_month() time.Month {
+
+	return current_julian.month
+}
+
+//
+/*func (current_julian *Julian) Get_monthNumber() int64 {
+
+	return current_julian.monthNumber
+}*/
+
+//
+func (current_julian *Julian) Get_day() int64 {
+
+	return current_julian.day
+}
+
+//
 func (current_julian *Julian) Format() string {
 
 	return fmt.Sprintf("%d-%d-%d", current_julian.year, int(current_julian.month), current_julian.day)
