@@ -64,6 +64,11 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 	current_julian_day.countOfDaysSinceJulianPeriod = (C + D + E + F - 1524.5) // + H + MIN + SEC + MILLISEC
 }
 
+func (current_julian_day *JulianDay) Initialize_julian_day_from_julian_date(julian_date Julian) {
+
+	
+}
+
 //
 func (current_julian_day *JulianDay) Determine_gregorian_date() Gregorian {
 
