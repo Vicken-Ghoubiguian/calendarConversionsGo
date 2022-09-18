@@ -72,9 +72,6 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_julian_date(juli
 	D := float64(julian_date.Get_day())
 
 	//
-	A := math.Floor(Y/100)
-	B := float64(0)
-	C := math.Floor(2 - A + B)
 	E := math.Floor(365.25 * (Y + 4716))
 	F := math.Floor(30.6001 * (M + 1))
 
@@ -85,7 +82,8 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_julian_date(juli
     MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
 
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = (C + D + E + F - 1524.5) // + H + MIN + SEC + MILLISEC 
+	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D - 1524.5 // + H + MIN + SEC + MILLISEC 
+	//current_julian_day.countOfDaysSinceJulianPeriod = (C + D + E + F - 1524.5) // + H + MIN + SEC + MILLISEC 
 }
 
 //
