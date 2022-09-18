@@ -12,6 +12,7 @@ type Julian struct {
 
 	year int64
 	month time.Month
+	monthNumber int64
 	day int64
 }
 
@@ -64,6 +65,7 @@ func (current_julian *Julian) Initialize_julian_from_time_golang(dt time.Time) {
 	//
 	current_julian.day = int64(day)
 	current_julian.month = time.Month(month)
+	current_julian.monthNumber = int64(month)
 	current_julian.year = int64(year)
 }
 
@@ -116,6 +118,7 @@ func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gre
 	//
 	current_julian.day = int64(day)
 	current_julian.month = time.Month(month)
+	current_julian.monthNumber = int64(month)
 	current_julian.year = int64(year)
 }
 
@@ -147,10 +150,10 @@ func (current_julian *Julian) Get_month() time.Month {
 }
 
 //
-/*func (current_julian *Julian) Get_monthNumber() int64 {
+func (current_julian *Julian) Get_monthNumber() int64 {
 
 	return current_julian.monthNumber
-}*/
+}
 
 //
 func (current_julian *Julian) Get_day() int64 {
