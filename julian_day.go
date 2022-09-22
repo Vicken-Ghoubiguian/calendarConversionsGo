@@ -34,9 +34,13 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_time(dt time.Tim
     MIN := math.Round((dt.Minute() / (24.0 * 60)), 5)
     SEC := math.Round((dt.Second() / (24.0 * 60 * 60)), 5)
     MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
+	H := float64(0)
+    MIN := float64(0)
+    SEC := float64(0)
+    MILLISEC := float64(0)
 
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 // + H + MIN + SEC + MILLISEC
+	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 + H + MIN + SEC + MILLISEC
 }
 
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
@@ -59,9 +63,13 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
     MIN := math.Round((dt.Minute() / (24.0 * 60)), 5)
     SEC := math.Round((dt.Second() / (24.0 * 60 * 60)), 5)
     MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
+	H := float64(0)
+    MIN := float64(0)
+    SEC := float64(0)
+    MILLISEC := float64(0)
 
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 // + H + MIN + SEC + MILLISEC
+	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 + H + MIN + SEC + MILLISEC
 }
 
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
