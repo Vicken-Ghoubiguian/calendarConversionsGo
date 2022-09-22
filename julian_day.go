@@ -36,7 +36,6 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_time(dt time.Tim
     MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
 
 	//
-	// current_julian_day.countOfDaysSinceJulianPeriod = (C + D + E + F - 1524.5) // + H + MIN + SEC + MILLISEC
 	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 // + H + MIN + SEC + MILLISEC
 }
 
@@ -62,7 +61,6 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
     MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
 
 	//
-	// current_julian_day.countOfDaysSinceJulianPeriod = (C + D + E + F - 1524.5) // + H + MIN + SEC + MILLISEC
 	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 // + H + MIN + SEC + MILLISEC
 }
 
