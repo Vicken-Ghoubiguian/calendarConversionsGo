@@ -21,7 +21,7 @@ func main() {
 	november_7_1917_gregorian_to_julian.Initialize_julian_from_Gregorian(november_7_1917_in_gregorian)
 
 	//
-	
+	fmt.Println("Gregorian : " + november_7_1917_in_gregorian.Format())
 
 	//
 	fmt.Println("Julian : " + november_7_1917_gregorian_to_julian.Format())
@@ -43,6 +43,7 @@ func main() {
 	september_22_1792_gregorian_to_julian.Initialize_julian_from_Gregorian(september_22_1792_in_gregorian)
 
 	//
+	fmt.Println("Gregorian : " + september_22_1792_in_gregorian.Format())
 
 	//
 	fmt.Println("Julian : " + september_22_1792_gregorian_to_julian.Format())
