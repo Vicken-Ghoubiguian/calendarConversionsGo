@@ -2,7 +2,6 @@ package calendar_conversions
 
 //
 import (
-	"time"
 	"fmt"
 	"math"
 )
@@ -12,35 +11,6 @@ type JulianDay struct {
 
 	//
 	countOfDaysSinceJulianPeriod float64
-}
-
-// (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
-func (current_julian_day *JulianDay) Initialize_julian_day_from_time(dt time.Time) {
-
-	//
-	Y := float64(dt.Year())
-	M := float64(dt.Month())
-	D := float64(dt.Day())
-
-	//
-	A := math.Floor(Y/100)
-	B := math.Floor(A/4)
-	C := math.Floor(2 - A + B)
-	E := math.Floor(365.25 * (Y + 4716))
-	F := math.Floor(30.6001 * (M + 1))
-
-	//
-	/*H := dt.Hour() / 24.0
-    MIN := math.Round((dt.Minute() / (24.0 * 60)), 5)
-    SEC := math.Round((dt.Second() / (24.0 * 60 * 60)), 5)
-    MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
-	H := float64(0)
-    MIN := float64(0)
-    SEC := float64(0)
-    MILLISEC := float64(0)
-
-	//
-	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 + H + MIN + SEC + MILLISEC
 }
 
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
