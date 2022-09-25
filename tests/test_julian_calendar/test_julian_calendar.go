@@ -12,7 +12,13 @@ func main() {
 	var current_julian_date calendar_conversions.Julian
 
 	//
-	current_julian_date.Initialize_julian_from_time_golang(time.Now())
+	var current_gregorian_date calendar_conversions.Gregorian
+
+	//
+	current_gregorian_date.Initialize_gregorian_from_time(time.Now())
+
+	//
+	current_julian_date.Initialize_julian_from_Gregorian(current_gregorian_date)
 
 	//
 	fmt.Println(current_julian_date.Format())
