@@ -96,6 +96,12 @@ func (current_gregorian *Gregorian) Get_second() int64 {
 }
 
 //
+/*func (current_gregorian *Gregorian) Get_microseconds() int64 {
+
+	return current_gregorian.microseconds
+}*/
+
+//
 func (current_gregorian *Gregorian) Format() string {
 
 	year := strconv.FormatInt(current_gregorian.year, 10)
