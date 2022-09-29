@@ -5,6 +5,7 @@ import (
     "time"
 	"fmt"
 	"math"
+	"strconv"
 )
 
 //
@@ -105,5 +106,19 @@ func (current_julian *Julian) Get_day() int64 {
 //
 func (current_julian *Julian) Format() string {
 
-	return fmt.Sprintf("%d-%d-%d", current_julian.year, int(current_julian.month), current_julian.day)
+	year := strconv.FormatInt(current_julian.year, 10)
+
+	month := strconv.FormatInt(int64(current_julian.month), 10)
+	if int64(current_julian.month) < 10 {
+
+		month = "0" + month
+	}
+
+	day := "0" + strconv.FormatInt(current_julian.day, 10)
+	if current_julian.day < 10 {
+
+		day = "0" + day
+	}
+
+	return fmt.Sprintf("%s-%s-%s", year, month, day)
 }
