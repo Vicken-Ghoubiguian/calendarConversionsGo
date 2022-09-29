@@ -78,6 +78,24 @@ func (current_gregorian *Gregorian) Get_day() int64 {
 }
 
 //
+func (current_gregorian *Gregorian) Get_hour() int64 {
+
+	return current_gregorian.hour
+}
+
+//
+func (current_gregorian *Gregorian) Get_minute() int64 {
+
+	return current_gregorian.minute
+}
+
+//
+func (current_gregorian *Gregorian) Get_second() int64 {
+
+	return current_gregorian.second
+}
+
+//
 func (current_gregorian *Gregorian) Format() string {
 
 	year := strconv.FormatInt(current_gregorian.year, 10)
