@@ -3,6 +3,7 @@ package calendar_conversions
 //
 import (
     "time"
+	"fmt"
 )
 
 //
@@ -78,5 +79,5 @@ func (current_gregorian *Gregorian) Get_day() int64 {
 //
 func (current_gregorian *Gregorian) Format() string {
 
-	return ""
+	return fmt.Sprintf("%d-%d-%d", current_gregorian.year, int(current_gregorian.month), current_gregorian.day)
 }
