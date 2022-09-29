@@ -136,5 +136,5 @@ func (current_gregorian *Gregorian) Format() string {
 		second = "0" + second
 	}
 
-	return fmt.Sprintf("%s-%s-%s", year, month, day)
+	return fmt.Sprintf("%s-%s-%s %s:%s:%s", year, month, day, hour, minute, second)
 }
