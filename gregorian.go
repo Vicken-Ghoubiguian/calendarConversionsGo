@@ -81,14 +81,17 @@ func (current_gregorian *Gregorian) Get_day() int64 {
 func (current_gregorian *Gregorian) Format() string {
 
 	year := strconv.FormatInt(current_gregorian.year, 10)
-	
+
 	month := strconv.FormatInt(int64(current_gregorian.month), 10)
+	if int64(current_gregorian.month) < 10 {
+
+		month = "0" + month
+	}
 
 	day := "0" + strconv.FormatInt(current_gregorian.day, 10)
 	if current_gregorian.day < 10 {
 
 		day = "0" + day
-
 	}
 
 	return fmt.Sprintf("%s-%s-%s", year, month, day)
