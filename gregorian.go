@@ -4,6 +4,7 @@ package calendar_conversions
 import (
     "time"
 	"fmt"
+	"strconv"
 )
 
 //
@@ -79,5 +80,9 @@ func (current_gregorian *Gregorian) Get_day() int64 {
 //
 func (current_gregorian *Gregorian) Format() string {
 
-	return fmt.Sprintf("%d-%d-%d", current_gregorian.year, int(current_gregorian.month), current_gregorian.day)
+	year := strconv.FormatInt(current_gregorian.year, 10)
+	month := strconv.FormatInt(int64(current_gregorian.month), 10)
+	day := strconv.FormatInt(current_gregorian.day, 10)
+
+	return fmt.Sprintf("%s-%s-%s", year, month, day)
 }
