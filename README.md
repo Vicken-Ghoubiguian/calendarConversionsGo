@@ -20,8 +20,8 @@ Go package to convert date and time in a particular calendar and to convert them
 go get -u github.com/Vicken-Ghoubiguian/calendar_conversions
 ```
 
-<a name="uses"></a>
-## Uses
+<a name="ideas_of_uses"></a>
+## Ideas of uses
 
 <a name="tests"></a>
 ## Tests
