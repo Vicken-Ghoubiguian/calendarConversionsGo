@@ -118,17 +118,23 @@ func (current_gregorian *Gregorian) Format() string {
 		day = "0" + day
 	}
 
-	/*month := strconv.FormatInt(int64(current_gregorian.month), 10)
-	if int64(current_gregorian.month) < 10 {
+	hour := strconv.FormatInt(current_gregorian.hour, 10)
+	if current_gregorian.hour < 10 {
 
-		month = "0" + month
+		month = "0" + hour
 	}
 
-	minute := "0" + strconv.FormatInt(current_gregorian.day, 10)
-	if current_gregorian.day < 10 {
+	minute := strconv.FormatInt(current_gregorian.minute, 10)
+	if current_gregorian.minute < 10 {
 
-		day = "0" + day
-	}*/
+		minute = "0" + minute
+	}
+
+	second := strconv.FormatInt(current_gregorian.second, 10)
+	if current_gregorian.second < 10 {
+
+		second = "0" + second
+	}
 
 	return fmt.Sprintf("%s-%s-%s", year, month, day)
 }
