@@ -4,7 +4,6 @@ package calendar_conversions
 import (
 	"fmt"
 	"math"
-	"strconv"
 )
 
 //
@@ -37,18 +36,13 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 
 	//
 	H := float64(gregorian_date.Get_hour()) / float64(24.0)
-	/*MIN := float64(0)
-	SEC := float64(0)*/
-    /*MIN := roundFloat((float64(gregorian_date.Get_minute()) / (24.0 * 60)), 5)
-    SEC := roundFloat((float64(gregorian_date.Get_second()) / (24.0 * 60 * 60)), 5)*/
+    //MIN := roundFloat((float64(gregorian_date.Get_minute()) / float64(24.0 * 60)), 5)
+    //SEC := roundFloat((float64(gregorian_date.Get_second()) / (24.0 * 60 * 60)), 5)*/
     /*MILLISEC := gregorian_date.Microseconds() / (24.0 * 60 * 60 * 1000)*/
     //MILLISEC := float64(0)
 
-	fmt.Println("\nTest of Pr : " + strconv.Itoa(gregorian_date.Get_hour()) + "\n")
-	//fmt.Println("\nTest of Pr : " + strconv.Itoa(H) + "\n")
-
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = (E + F + D + C - 1524.5) + float64(H) //+ MIN + SEC + MILLISEC
+	current_julian_day.countOfDaysSinceJulianPeriod = (E + F + D + C - 1524.5) + H //+ MIN //+ SEC + MILLISEC
 }
 
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
