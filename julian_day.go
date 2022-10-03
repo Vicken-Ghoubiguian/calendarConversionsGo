@@ -44,7 +44,7 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
     MILLISEC := float64(0)
 
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D + C - 1524.5 + H + MIN + SEC + MILLISEC
+	current_julian_day.countOfDaysSinceJulianPeriod = (E + F + D + C - 1524.5) + H + MIN + SEC + MILLISEC
 }
 
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
