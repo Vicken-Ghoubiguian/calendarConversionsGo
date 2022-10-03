@@ -11,18 +11,18 @@ import (
 type Gregorian struct {
 
 	//
-	year int64
+	year int
 	month time.Month
-	monthNumber int64
-	day int64
-	hour int64
-	minute int64
-	second int64
-	microseconds int64
+	monthNumber int
+	day int
+	hour int
+	minute int
+	second int
+	microseconds int
 }
 
 //
-func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int64, monthNumber int64, day int64, hour int64, minute int64, second int64, microseconds int64) {
+func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int, monthNumber int, day int, hour int, minute int, second int, microseconds int) {
 
 	current_gregorian.year = year
 	current_gregorian.month = time.Month(monthNumber)
@@ -37,13 +37,13 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int6
 //
 func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time) {
 
-	current_gregorian.year = int64(dt.Year())
+	current_gregorian.year = dt.Year()
 	current_gregorian.month = dt.Month()
-	current_gregorian.monthNumber = int64(dt.Month())
-	current_gregorian.day = int64(dt.Day())
-	current_gregorian.hour = int64(dt.Hour())
-	current_gregorian.minute = int64(dt.Minute())
-	current_gregorian.second = int64(dt.Second())
+	current_gregorian.monthNumber = int(dt.Month())
+	current_gregorian.day = dt.Day()
+	current_gregorian.hour = dt.Hour()
+	current_gregorian.minute = dt.Minute()
+	current_gregorian.second = dt.Second()
 	//current_gregorian.microseconds = int64(dt.Microsecond())
 }
 
@@ -54,7 +54,7 @@ func(current_gregorian *Gregorian) Initialize_time(year int64, monthNumber int64
 }
 
 //
-func (current_gregorian *Gregorian) Get_year() int64 {
+func (current_gregorian *Gregorian) Get_year() int {
 
 	return current_gregorian.year
 }
@@ -66,37 +66,37 @@ func (current_gregorian *Gregorian) Get_month() time.Month {
 }
 
 //
-func (current_gregorian *Gregorian) Get_monthNumber() int64 {
+func (current_gregorian *Gregorian) Get_monthNumber() int {
 
 	return current_gregorian.monthNumber
 }
 
 //
-func (current_gregorian *Gregorian) Get_day() int64 {
+func (current_gregorian *Gregorian) Get_day() int {
 
 	return current_gregorian.day
 }
 
 //
-func (current_gregorian *Gregorian) Get_hour() int64 {
+func (current_gregorian *Gregorian) Get_hour() int {
 
 	return current_gregorian.hour
 }
 
 //
-func (current_gregorian *Gregorian) Get_minute() int64 {
+func (current_gregorian *Gregorian) Get_minute() int {
 
 	return current_gregorian.minute
 }
 
 //
-func (current_gregorian *Gregorian) Get_second() int64 {
+func (current_gregorian *Gregorian) Get_second() int {
 
 	return current_gregorian.second
 }
 
 //
-/*func (current_gregorian *Gregorian) Get_microseconds() int64 {
+/*func (current_gregorian *Gregorian) Get_microseconds() int {
 
 	return current_gregorian.microseconds
 }*/
@@ -104,33 +104,33 @@ func (current_gregorian *Gregorian) Get_second() int64 {
 //
 func (current_gregorian *Gregorian) Format() string {
 
-	year := strconv.FormatInt(current_gregorian.year, 10)
+	year := strconv.Itoa(current_gregorian.year)
 
-	month := strconv.FormatInt(int64(current_gregorian.month), 10)
+	month := strconv.Itoa(int(current_gregorian.month))
 	if int64(current_gregorian.month) < 10 {
 
 		month = "0" + month
 	}
 
-	day := strconv.FormatInt(current_gregorian.day, 10)
+	day := strconv.Itoa(current_gregorian.day)
 	if current_gregorian.day < 10 {
 
 		day = "0" + day
 	}
 
-	hour := strconv.FormatInt(current_gregorian.hour, 10)
+	hour := strconv.Itoa(current_gregorian.hour)
 	if current_gregorian.hour < 10 {
 
-		month = "0" + hour
+		hour = "0" + hour
 	}
 
-	minute := strconv.FormatInt(current_gregorian.minute, 10)
+	minute := strconv.Itoa(current_gregorian.minute)
 	if current_gregorian.minute < 10 {
 
 		minute = "0" + minute
 	}
 
-	second := strconv.FormatInt(current_gregorian.second, 10)
+	second := strconv.Itoa(current_gregorian.second)
 	if current_gregorian.second < 10 {
 
 		second = "0" + second
