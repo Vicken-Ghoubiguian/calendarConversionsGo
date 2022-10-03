@@ -7,16 +7,16 @@ import (
 )
 
 //
+func roundFloat(val float64, precision uint) float64 {
+	ratio := math.Pow(10, float64(precision))
+	return math.Trunc(val*ratio) / ratio
+}
+
+//
 type JulianDay struct {
 
 	//
 	countOfDaysSinceJulianPeriod float64
-}
-
-//
-func roundFloat(val float64, precision uint) float64 {
-	ratio := math.Pow(10, float64(precision))
-	return math.Trunc(val*ratio) / ratio
 }
 
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
