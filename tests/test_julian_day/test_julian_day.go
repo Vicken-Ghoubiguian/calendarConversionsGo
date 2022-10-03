@@ -17,6 +17,8 @@ func main() {
 	//
 	current_gregorian_date.Initialize_gregorian_from_time(time.Now())
 
+	fmt.Println(current_gregorian_date.Format())
+
 	//
 	current_julian_day.Initialize_julian_day_from_gregorian_date(current_gregorian_date)
 
