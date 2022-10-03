@@ -64,7 +64,7 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_julian_date(juli
     MILLISEC := dt.Microseconds() / (24.0 * 60 * 60 * 1000)*/
 
 	//
-	current_julian_day.countOfDaysSinceJulianPeriod = E + F + D - 1524.5 // + H + MIN + SEC + MILLISEC
+	current_julian_day.countOfDaysSinceJulianPeriod = (E + F + D - 1524.5) // + H + MIN + SEC + MILLISEC
 }
 
 //
