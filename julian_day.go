@@ -36,8 +36,10 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 
 	//
 	H := float64(gregorian_date.Get_hour() / 24.0)
-    MIN := roundFloat((float64(gregorian_date.Get_minute()) / (24.0 * 60)), 5)
-    SEC := roundFloat((float64(gregorian_date.Get_second()) / (24.0 * 60 * 60)), 5)
+	MIN := float64(0)
+	SEC := float64(0)
+    /*MIN := roundFloat((float64(gregorian_date.Get_minute()) / (24.0 * 60)), 5)
+    SEC := roundFloat((float64(gregorian_date.Get_second()) / (24.0 * 60 * 60)), 5)*/
     /*MILLISEC := gregorian_date.Microseconds() / (24.0 * 60 * 60 * 1000)*/
     MILLISEC := float64(0)
 
