@@ -46,6 +46,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 	current_gregorian.second = dt.Second()
 	//current_gregorian.microseconds = int64(dt.Microsecond())
 
+	fmt.Println("\nTest of Pr : " + string(dt.Hour()) + "\n")
 	fmt.Println("\nTest of Pr : " + string(current_gregorian.hour) + "\n")
 }
 
