@@ -43,6 +43,7 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
     /*MILLISEC := gregorian_date.Microseconds() / (24.0 * 60 * 60 * 1000)*/
     //MILLISEC := float64(0)
 
+	fmt.Println("\nTest of Pr : " + string(gregorian_date.Get_hour()) + "\n")
 	fmt.Println("\n" + fmt.Sprintf("%f", H) + "\n")
 
 	//
