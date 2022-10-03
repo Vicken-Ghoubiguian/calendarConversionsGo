@@ -13,6 +13,11 @@ type JulianDay struct {
 	countOfDaysSinceJulianPeriod float64
 }
 
+func roundFloat(val float64, precision uint) float64 {
+	ratio := math.Pow(10, float64(precision))
+	return math.Trunc(val*ratio) / ratio
+}
+
 // (Algorithm from Jean Meeus' 'Astronomical Algorithms', second edition, chapter 7 called 'Julian Day', pages 60 - 61)...
 func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(gregorian_date Gregorian) {
 
@@ -30,10 +35,9 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 
 	//
 	H := float64(gregorian_date.Get_hour() / 24.0)
-    /*MIN := math.Round((gregorian_date.Minute() / (24.0 * 60)), 5)
-    SEC := math.Round((gregorian_date.Second() / (24.0 * 60 * 60)), 5)
+    MIN := roundFloat((float64(gregorian_date.Get_minute()) / (24.0 * 60)), 5)
+    /*SEC := math.Round((gregorian_date.Second() / (24.0 * 60 * 60)), 5)
     MILLISEC := gregorian_date.Microseconds() / (24.0 * 60 * 60 * 1000)*/
-    MIN := float64(0)
     SEC := float64(0)
     MILLISEC := float64(0)
 
