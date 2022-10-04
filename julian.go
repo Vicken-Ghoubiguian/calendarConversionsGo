@@ -108,6 +108,24 @@ func (current_julian *Julian) Get_day() int {
 }
 
 //
+func (current_julian *Julian) Get_hour() int {
+
+	return current_julian.hour
+}
+
+//
+func (current_julian *Julian) Get_minute() int {
+
+	return current_julian.minute
+}
+
+//
+func (current_julian *Julian) Get_second() int {
+
+	return current_julian.second
+}
+
+//
 func (current_julian *Julian) Format() string {
 
 	year := strconv.Itoa(current_julian.year)
