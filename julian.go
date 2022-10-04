@@ -15,6 +15,10 @@ type Julian struct {
 	month time.Month
 	monthNumber int64
 	day int64
+	hour int
+	minute int
+	second int
+	microseconds int
 }
 
 //
