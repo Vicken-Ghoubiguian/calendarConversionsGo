@@ -16,6 +16,8 @@ Go package to convert date and time in a particular calendar and to convert them
 <a name="how_to_use_it"></a>
 ## How to use it ?
 
+To install this Go module, run the following command in your command terminal :
+
 ```bash
 go get -u github.com/Vicken-Ghoubiguian/calendar_conversions
 ```
