@@ -11,10 +11,10 @@ import (
 //
 type Julian struct {
 
-	year int64
+	year int
 	month time.Month
-	monthNumber int64
-	day int64
+	monthNumber int
+	day int
 	hour int
 	minute int
 	second int
@@ -68,10 +68,10 @@ func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gre
 	day := b - d - math.Floor(30.6001 * e)
 	
 	//
-	current_julian.day = int64(day)
+	current_julian.day = int(day)
 	current_julian.month = time.Month(month)
-	current_julian.monthNumber = int64(month)
-	current_julian.year = int64(year)
+	current_julian.monthNumber = int(month)
+	current_julian.year = int(year)
 }
 
 //
@@ -84,7 +84,7 @@ func (current_julian *Julian) Julian_to_Gregorian() Gregorian {
 }
 
 //
-func (current_julian *Julian) Get_year() int64 {
+func (current_julian *Julian) Get_year() int {
 
 	return current_julian.year
 }
@@ -96,13 +96,13 @@ func (current_julian *Julian) Get_month() time.Month {
 }
 
 //
-func (current_julian *Julian) Get_monthNumber() int64 {
+func (current_julian *Julian) Get_monthNumber() int {
 
 	return current_julian.monthNumber
 }
 
 //
-func (current_julian *Julian) Get_day() int64 {
+func (current_julian *Julian) Get_day() int {
 
 	return current_julian.day
 }
@@ -110,15 +110,15 @@ func (current_julian *Julian) Get_day() int64 {
 //
 func (current_julian *Julian) Format() string {
 
-	year := strconv.FormatInt(current_julian.year, 10)
+	year := strconv.Itoa(current_julian.year)
 
-	month := strconv.FormatInt(int64(current_julian.month), 10)
+	month := strconv.Itoa(int(current_julian.month))
 	if int64(current_julian.month) < 10 {
 
 		month = "0" + month
 	}
 
-	day := "0" + strconv.FormatInt(current_julian.day, 10)
+	day := "0" + strconv.Itoa(current_julian.day)
 	if current_julian.day < 10 {
 
 		day = "0" + day
