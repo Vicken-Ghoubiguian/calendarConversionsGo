@@ -18,7 +18,7 @@ type Julian struct {
 	hour int
 	minute int
 	second int
-	microseconds int
+	//microseconds int
 }
 
 //
@@ -124,6 +124,12 @@ func (current_julian *Julian) Get_second() int {
 
 	return current_julian.second
 }
+
+//
+/*func (current_julian *Julian) Get_microseconds() int {
+
+	return current_julian.microseconds
+}*/
 
 //
 func (current_julian *Julian) Format() string {
