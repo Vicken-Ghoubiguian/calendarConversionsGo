@@ -113,12 +113,12 @@ func (current_julian *Julian) Format() string {
 	year := strconv.Itoa(current_julian.year)
 
 	month := strconv.Itoa(int(current_julian.month))
-	if int64(current_julian.month) < 10 {
+	if int(current_julian.month) < 10 {
 
 		month = "0" + month
 	}
 
-	day := "0" + strconv.Itoa(current_julian.day)
+	day := strconv.Itoa(current_julian.day)
 	if current_julian.day < 10 {
 
 		day = "0" + day

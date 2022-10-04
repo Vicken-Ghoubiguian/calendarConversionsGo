@@ -107,7 +107,7 @@ func (current_gregorian *Gregorian) Format() string {
 	year := strconv.Itoa(current_gregorian.year)
 
 	month := strconv.Itoa(int(current_gregorian.month))
-	if int64(current_gregorian.month) < 10 {
+	if int(current_gregorian.month) < 10 {
 
 		month = "0" + month
 	}
