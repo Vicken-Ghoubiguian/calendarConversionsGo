@@ -46,13 +46,13 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 	current_gregorian.minute = dt.Minute()
 	current_gregorian.second = dt.Second()
 
-	
+
 
 	//current_gregorian.microseconds = int(dt.Microsecond())
 }
 
 //
-func(current_gregorian *Gregorian) Initialize_time(year int64, monthNumber int64, day int64) time.Time {
+func(current_gregorian *Gregorian) Initialize_time(year int, monthNumber int, day int, hour int, minute int, second int, microseconds int) time.Time {
 
 	return time.Date(int(year), time.Month(monthNumber), int(day), 0, 0, 0, 0, time.Now().Location())
 }
