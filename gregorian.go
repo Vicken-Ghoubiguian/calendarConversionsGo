@@ -31,7 +31,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int,
 	current_gregorian.hour = hour
 	current_gregorian.minute = minute
 	current_gregorian.second = second
-	//current_gregorian.microseconds = microseconds
+	current_gregorian.microseconds = microseconds
 }
 
 //
@@ -44,6 +44,9 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 	current_gregorian.hour = dt.Hour()
 	current_gregorian.minute = dt.Minute()
 	current_gregorian.second = dt.Second()
+
+	
+
 	//current_gregorian.microseconds = int64(dt.Microsecond())
 }
 
