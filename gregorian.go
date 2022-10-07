@@ -5,6 +5,7 @@ import (
     "time"
 	"fmt"
 	"strconv"
+	//"strings"
 )
 
 //
@@ -139,5 +140,7 @@ func (current_gregorian *Gregorian) Format() string {
 		second = "0" + second
 	}
 
-	return fmt.Sprintf("%s-%s-%s %s:%s:%s", year, month, day, hour, minute, second)
+	microseconds := strconv.Itoa(current_gregorian.microseconds)
+
+	return fmt.Sprintf("%s-%s-%s %s:%s:%s.%s", year, month, day, hour, minute, second, microseconds)
 }
