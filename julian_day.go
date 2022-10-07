@@ -32,8 +32,7 @@ func (current_julian_day *JulianDay) Initialize_julian_day_from_gregorian_date(g
 	H := float64(gregorian_date.Get_hour()) / float64(24.0)
     MIN := roundFloat((float64(gregorian_date.Get_minute()) / float64(24.0 * 60)), 5)
     SEC := roundFloat((float64(gregorian_date.Get_second()) / (24.0 * 60 * 60)), 5)
-    /*MILLISEC := gregorian_date.Microseconds() / (24.0 * 60 * 60 * 1000)*/
-    MILLISEC := float64(0)
+    MILLISEC := float64(gregorian_date.Get_microseconds() / (24.0 * 60 * 60 * 1000))
 
 	//
 	current_julian_day.countOfDaysSinceJulianPeriod = (E + F + D + C - 1524.5) + H + MIN + SEC + MILLISEC
