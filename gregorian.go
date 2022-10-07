@@ -45,7 +45,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 	current_gregorian.minute = dt.Minute()
 	current_gregorian.second = dt.Second()
 
-	
+
 
 	//current_gregorian.microseconds = int64(dt.Microsecond())
 }
@@ -99,10 +99,10 @@ func (current_gregorian *Gregorian) Get_second() int {
 }
 
 //
-/*func (current_gregorian *Gregorian) Get_microseconds() int {
+func (current_gregorian *Gregorian) Get_microseconds() int {
 
 	return current_gregorian.microseconds
-}*/
+}
 
 //
 func (current_gregorian *Gregorian) Format() string {
