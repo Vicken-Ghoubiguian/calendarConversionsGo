@@ -48,7 +48,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 
 
 
-	//current_gregorian.microseconds = int64(dt.Microsecond())
+	//current_gregorian.microseconds = int(dt.Microsecond())
 }
 
 //
