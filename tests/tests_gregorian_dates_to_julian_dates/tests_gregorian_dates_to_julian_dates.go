@@ -15,7 +15,7 @@ func main() {
 	var november_7_1917_in_gregorian calendar_conversions.Gregorian
 
 	//
-	november_7_1917_in_gregorian.Initialize_gregorian_from_elements(1917, 11, 7, 0, 0, 0, 0)
+	november_7_1917_in_gregorian.Initialize_gregorian_from_elements(1917, 11, 7, 5, 0, 0, 0)
 
 	//
 	november_7_1917_gregorian_to_julian.Initialize_julian_from_Gregorian(november_7_1917_in_gregorian)
