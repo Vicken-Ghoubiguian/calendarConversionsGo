@@ -5,7 +5,7 @@ import (
     "time"
 	"fmt"
 	"strconv"
-	//"strings"
+	"strings"
 )
 
 //
@@ -38,6 +38,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_elements(year int,
 //
 func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time) {
 
+	//
 	current_gregorian.year = dt.Year()
 	current_gregorian.month = dt.Month()
 	current_gregorian.monthNumber = int(dt.Month())
@@ -46,9 +47,14 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 	current_gregorian.minute = dt.Minute()
 	current_gregorian.second = dt.Second()
 
+	//
+	pts := dt.String()
+	pts_split := strings.Split(pts, ".")
+	pts_split_2 := strings.Split(pts_split[1], " ")
+	pts_split_3 := pts_split_2[0]
 
-
-	//current_gregorian.microseconds = int(dt.Microsecond())
+	//
+	current_gregorian.microseconds, _ = strconv.Atoi(pts_split_3)
 }
 
 //
