@@ -60,7 +60,7 @@ func (current_gregorian *Gregorian) Initialize_gregorian_from_time(dt time.Time)
 //
 func(current_gregorian *Gregorian) Initialize_time(year int, monthNumber int, day int, hour int, minute int, second int, microseconds int) time.Time {
 
-	return time.Date(int(year), time.Month(monthNumber), int(day), 0, 0, 0, 0, time.Now().Location())
+	return time.Date(year, time.Month(monthNumber), day, hour, minute, second, microseconds, time.Now().Location())
 }
 
 //
