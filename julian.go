@@ -80,6 +80,7 @@ func (current_julian *Julian) Julian_to_Gregorian() Gregorian {
 	//
 	var gd Gregorian
 
+	//
 	return gd
 }
 
