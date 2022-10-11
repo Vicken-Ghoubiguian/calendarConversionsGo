@@ -155,5 +155,25 @@ func (current_julian *Julian) Format() string {
 		day = "0" + day
 	}
 
-	return fmt.Sprintf("%s-%s-%s", year, month, day)
+	hour := strconv.Itoa(current_julian.hour)
+	if current_julian.hour < 10 {
+
+		hour = "0" + hour
+	}
+
+	minute := strconv.Itoa(current_julian.minute)
+	if current_julian.minute < 10 {
+
+		minute = "0" + minute
+	}
+
+	second := strconv.Itoa(current_julian.second)
+	if current_julian.second < 10 {
+
+		second = "0" + second
+	}
+
+	microseconds := strconv.Itoa(current_julian.microseconds)
+
+	return fmt.Sprintf("%s-%s-%s %s:%s:%s.%s", year, month, day, hour, minute, second, microseconds)
 }
