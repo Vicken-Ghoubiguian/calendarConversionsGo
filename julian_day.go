@@ -96,6 +96,8 @@ func (current_julian_day *JulianDay) Determine_julian_date() Julian {
 	//
 	var jd Julian
 
+	
+
 	//
 	return jd
 }
