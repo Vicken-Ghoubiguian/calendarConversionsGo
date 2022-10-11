@@ -96,7 +96,56 @@ func (current_julian_day *JulianDay) Determine_julian_date() Julian {
 	//
 	var jd Julian
 
+	/*jd.Initialize_julian_day_from_gregorian_date(gregorianDate)
+
+	//
+	jd.Add_value_to_count_of_days_since_julian_period(0.5)
+	a := math.Floor(jd.Get_count_of_days_since_julian_period())
+	b := a + 1524
+	c := math.Floor((b - 122.1) / 365.25)
+	d := math.Floor(365.25 * c)
+	e := math.Floor((b - d) / 30.6001)
 	
+	//
+	month := -1
+
+	//
+	if e < 14 {
+
+		month = int(math.Floor(e - 1))
+
+	} else {
+
+		month = int(math.Floor(e - 13))
+	}
+
+	//
+	year := -1
+
+	//
+	if month > 2 {
+
+		year = int(math.Floor(c - 4716))
+
+	} else {
+
+		year = int(math.Floor(c - 4715))
+	}
+
+	//
+	day := b - d - math.Floor(30.6001 * e)
+	
+	//
+	current_julian.day = int(day)
+	current_julian.month = time.Month(month)
+	current_julian.monthNumber = int(month)
+	current_julian.year = int(year)
+
+	//
+	current_julian.hour = 0
+	current_julian.minute = 0
+	current_julian.second = 0
+	current_julian.microseconds = 0*/
 
 	//
 	return jd
