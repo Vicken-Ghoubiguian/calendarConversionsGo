@@ -72,6 +72,12 @@ func (current_julian *Julian) Initialize_julian_from_Gregorian(gregorianDate Gre
 	current_julian.month = time.Month(month)
 	current_julian.monthNumber = int(month)
 	current_julian.year = int(year)
+
+	//
+	current_julian.hour = 0
+	current_julian.minute = 0
+	current_julian.second = 0
+	current_julian.microseconds = 0
 }
 
 //
