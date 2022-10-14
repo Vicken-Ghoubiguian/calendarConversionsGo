@@ -64,5 +64,7 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Format
 //
 func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) EqualTo(second_iso_week_based_calendar_date *ISO_week_based_calendar_date) bool {
 
+    
+
     return false
 }
