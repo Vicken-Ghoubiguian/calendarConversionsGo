@@ -177,3 +177,16 @@ func (current_julian *Julian) Format() string {
 
 	return fmt.Sprintf("%s-%s-%s %s:%s:%s.%s", year, month, day, hour, minute, second, microseconds)
 }
+
+//
+func (current_julian *Julian) EqualTo(second_current_julian *Julian) bool {
+
+    isEqual := false
+
+	if (current_julian.year == second_current_julian.year) && (current_julian.month == second_current_julian.month) && (current_julian.monthNumber == second_current_julian.monthNumber) && (current_julian.day == second_current_julian.day) && (current_julian.hour == second_current_julian.hour) && (current_julian.minute == second_current_julian.minute) && (current_julian.second == second_current_julian.second) && (current_julian.microseconds == second_current_julian.microseconds) {
+
+		isEqual = true
+	}
+
+    return isEqual
+}
