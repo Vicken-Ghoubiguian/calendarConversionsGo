@@ -165,3 +165,16 @@ func (current_julian_day *JulianDay) Format() string {
 
 	return fmt.Sprintf("%f", current_julian_day.countOfDaysSinceJulianPeriod)
 }
+
+//
+func (current_julian_day *JulianDay) EqualTo(second_current_julian_day *JulianDay) bool {
+
+    isEqual := false
+
+    if current_julian_day.countOfDaysSinceJulianPeriod == second_current_julian_day.countOfDaysSinceJulianPeriod {
+
+        isEqual = true
+    }
+
+    return isEqual
+}
