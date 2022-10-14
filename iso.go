@@ -30,7 +30,7 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Initia
         current_iso_week_based_calendar_date.iso_week_day = 7
 
     } else {
-        
+
         current_iso_week_based_calendar_date.iso_week_day = int(dt.Weekday())
     }
 }
@@ -69,11 +69,11 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Format
 //
 func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) EqualTo(second_iso_week_based_calendar_date *ISO_week_based_calendar_date) bool {
 
-    isEqual := true
+    isEqual := false
 
     if (current_iso_week_based_calendar_date.iso_year == second_iso_week_based_calendar_date.iso_year) && (current_iso_week_based_calendar_date.iso_week_number == second_iso_week_based_calendar_date.iso_week_number) && (current_iso_week_based_calendar_date.iso_week_day == second_iso_week_based_calendar_date.iso_week_day) {
 
-        isEqual = false
+        isEqual = true
     }
 
     return isEqual
