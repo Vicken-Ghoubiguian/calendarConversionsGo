@@ -150,3 +150,11 @@ func (current_gregorian *Gregorian) Format() string {
 
 	return fmt.Sprintf("%s-%s-%s %s:%s:%s.%s", year, month, day, hour, minute, second, microseconds)
 }
+
+//
+func (current_gregorian *Gregorian) EqualTo(second_current_gregorian *Gregorian) bool {
+
+    isEqual := false
+
+    return isEqual
+}
