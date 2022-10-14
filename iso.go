@@ -26,9 +26,11 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Initia
     current_iso_week_based_calendar_date.iso_week_number = iso_date_s_week
 
     if int(dt.Weekday()) == 0 {
+
         current_iso_week_based_calendar_date.iso_week_day = 7
 
     } else {
+        
         current_iso_week_based_calendar_date.iso_week_day = int(dt.Weekday())
     }
 }
@@ -55,8 +57,11 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Get_IS
 func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Format(compact bool) string {
 
     if compact {
+
         return fmt.Sprintf("%dW%d%d", current_iso_week_based_calendar_date.iso_year, current_iso_week_based_calendar_date.iso_week_number, current_iso_week_based_calendar_date.iso_week_day)
+
     } else {
+
 	    return fmt.Sprintf("%d-W%d-%d", current_iso_week_based_calendar_date.iso_year, current_iso_week_based_calendar_date.iso_week_number, current_iso_week_based_calendar_date.iso_week_day)
     }
 }
@@ -64,7 +69,12 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Format
 //
 func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) EqualTo(second_iso_week_based_calendar_date *ISO_week_based_calendar_date) bool {
 
-    
+    isEqual := true
 
-    return false
+    if (current_iso_week_based_calendar_date.iso_year == second_iso_week_based_calendar_date.iso_year) && (current_iso_week_based_calendar_date.iso_week_number == second_iso_week_based_calendar_date.iso_week_number) && (current_iso_week_based_calendar_date.iso_week_day == second_iso_week_based_calendar_date.iso_week_day) {
+
+        isEqual = false
+    }
+
+    return isEqual
 }
