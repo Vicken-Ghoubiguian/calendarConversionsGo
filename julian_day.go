@@ -3,6 +3,7 @@ package calendar_conversions
 //
 import (
 	"fmt"
+	"time"
 	"math"
 )
 
@@ -96,8 +97,7 @@ func (current_julian_day *JulianDay) Determine_julian_date() Julian {
 	//
 	var jd Julian
 
-	/*
-	a := math.Floor(jd.Get_count_of_days_since_julian_period())
+	a := math.Floor(current_julian_day.Get_count_of_days_since_julian_period())
 	b := a + 1524
 	c := math.Floor((b - 122.1) / 365.25)
 	d := math.Floor(365.25 * c)
@@ -133,16 +133,16 @@ func (current_julian_day *JulianDay) Determine_julian_date() Julian {
 	day := b - d - math.Floor(30.6001 * e)
 	
 	//
-	current_julian.day = int(day)
-	current_julian.month = time.Month(month)
-	current_julian.monthNumber = int(month)
-	current_julian.year = int(year)
+	jd.day = int(day)
+	jd.month = time.Month(month)
+	jd.monthNumber = int(month)
+	jd.year = int(year)
 
 	//
-	current_julian.hour = 0
-	current_julian.minute = 0
-	current_julian.second = 0
-	current_julian.microseconds = 0*/
+	jd.hour = 0
+	jd.minute = 0
+	jd.second = 0
+	jd.microseconds = 0
 
 	//
 	return jd
