@@ -156,5 +156,7 @@ func (current_gregorian *Gregorian) EqualTo(second_current_gregorian *Gregorian)
 
     isEqual := false
 
+	
+
     return isEqual
 }
