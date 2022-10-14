@@ -60,3 +60,9 @@ func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) Format
 	    return fmt.Sprintf("%d-W%d-%d", current_iso_week_based_calendar_date.iso_year, current_iso_week_based_calendar_date.iso_week_number, current_iso_week_based_calendar_date.iso_week_day)
     }
 }
+
+//
+func (current_iso_week_based_calendar_date *ISO_week_based_calendar_date) EqualTo(second_iso_week_based_calendar_date *ISO_week_based_calendar_date) bool {
+
+    return false
+}
