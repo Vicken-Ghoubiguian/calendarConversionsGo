@@ -156,7 +156,10 @@ func (current_gregorian *Gregorian) EqualTo(second_current_gregorian *Gregorian)
 
     isEqual := false
 
-	
+	if (current_gregorian.year == second_current_gregorian.year) && (current_gregorian.month == second_current_gregorian.month) && (current_gregorian.monthNumber == second_current_gregorian.monthNumber) && (current_gregorian.day == second_current_gregorian.day) && (current_gregorian.hour == second_current_gregorian.hour) && (current_gregorian.minute == second_current_gregorian.minute) && (current_gregorian.second == second_current_gregorian.second) && (current_gregorian.microseconds == second_current_gregorian.microseconds) {
+
+		isEqual = true
+	}
 
     return isEqual
 }
