@@ -96,10 +96,7 @@ func (current_julian_day *JulianDay) Determine_julian_date() Julian {
 	//
 	var jd Julian
 
-	/*jd.Initialize_julian_day_from_gregorian_date(gregorianDate)
-
-	//
-	jd.Add_value_to_count_of_days_since_julian_period(0.5)
+	/*
 	a := math.Floor(jd.Get_count_of_days_since_julian_period())
 	b := a + 1524
 	c := math.Floor((b - 122.1) / 365.25)
