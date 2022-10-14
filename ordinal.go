@@ -39,3 +39,16 @@ func (current_ordinal_date *Ordinal_date) Format() string {
 
 	return fmt.Sprintf("%d-%d", current_ordinal_date.year, current_ordinal_date.day_of_the_year)
 }
+
+//
+func (current_ordinal_date *Ordinal_date) EqualTo(second_current_ordinal_date *Ordinal_date) bool {
+
+    isEqual := false
+
+    if (current_ordinal_date.year == second_current_ordinal_date.year) && (current_ordinal_date.day_of_the_year == second_current_ordinal_date.day_of_the_year) {
+
+        isEqual = true
+    }
+
+    return isEqual
+}
